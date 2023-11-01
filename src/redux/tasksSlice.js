@@ -1,11 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { addTask, deleteTask, toggleCompleted } from './actions';
 import { nanoid } from 'nanoid';
 
 const tasksInitialState = [];
 
 const tasksSlice = createSlice({
-  name: tasks,
+  name: 'tasks',
   initialState: tasksInitialState,
   reducers: {
     addTask: {
