@@ -22,7 +22,7 @@ const tasksSlice = createSlice({
       },
     },
     deleteTask(state, action) {
-      return state.filter(task => task.id != action.payload);
+      return state.filter(task => task.id !== action.payload);
     },
     toggleCompleted(state, action) {
       for (const task of state) {
